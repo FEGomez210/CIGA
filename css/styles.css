@@ -379,7 +379,6 @@
 
     @media (max-width: 1020px) {
       .nav-links { gap: 18px; }
-      .nav-links a:nth-child(4) { display: none; }
       .hero-grid { grid-template-columns: 1fr; }
       .hero-copy { max-width: 760px; }
       .hero-visual { width: min(100%, 590px); margin: -8px auto 0; }
