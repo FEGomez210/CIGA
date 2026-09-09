@@ -23,9 +23,6 @@
         <a href="#equipo">Equipo</a>
         <a href="#preguntas">Preguntas</a>
       </nav>
-      <button class="btn btn-primary" data-open-diagnosis>Diagnóstico sin cargo
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </button>
       <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú"><span></span></button>
     </div>
   </header>
@@ -38,9 +35,6 @@
           <h1>Tu negocio alimentario, <span>listo para crecer.</span></h1>
           <p class="lead">Ordenamos requisitos, procesos y documentación para que puedas producir alimentos seguros, cumplir la normativa y llegar a nuevos mercados.</p>
           <div class="hero-actions">
-            <button class="btn btn-primary" data-open-diagnosis>Descubrir mi próximo paso
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
             <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
           </div>
           <div class="hero-proof" aria-label="Características del servicio">
@@ -115,9 +109,6 @@
           <p class="kicker">Menos incertidumbre</p>
           <h2>La normativa no debería frenar una buena idea.</h2>
           <p class="lead">Traducimos exigencias técnicas en un plan claro, realista y alineado con los objetivos de tu negocio.</p>
-          <button class="inline-link" data-open-diagnosis>Hacer un diagnóstico express
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </button>
         </div>
         <div class="challenge-list">
           <article class="challenge-card reveal">
@@ -201,7 +192,6 @@
           <p class="kicker">Nuestra dinámica</p>
           <h2>Un camino claro, de punta a punta.</h2>
           <p class="lead">Cada proyecto parte de la realidad del establecimiento y de un objetivo concreto de negocio.</p>
-          <button class="btn btn-secondary" data-open-diagnosis>Conversemos sobre tu proyecto</button>
         </div>
         <div class="steps">
           <article class="step reveal"><span class="step-number">01</span><div class="step-content"><h3>Diagnóstico</h3><p>Relevamos la situación, el rubro, la documentación y las metas para identificar brechas y prioridades.</p><span class="meta">Visita o reunión inicial</span></div></article>
@@ -239,7 +229,7 @@
 
     <section class="section" id="preguntas">
       <div class="container faq-wrap">
-        <div class="faq-intro reveal"><p class="kicker">Preguntas frecuentes</p><h2>Respuestas para empezar con claridad.</h2><p class="lead">Si tu situación es distinta, podemos orientarte en una primera conversación.</p><button class="btn btn-secondary" data-open-diagnosis>Hacer una consulta</button></div>
+        <div class="faq-intro reveal"><p class="kicker">Preguntas frecuentes</p><h2>Respuestas para empezar con claridad.</h2><p class="lead">Si tu situación es distinta, podemos orientarte en una primera conversación.</p></div>
         <div class="faq-list reveal">
           <article class="faq-item open"><button class="faq-question" aria-expanded="true"><span>¿Necesito inscribir mi establecimiento o mi producto?</span><span class="faq-plus" aria-hidden="true"></span></button><div class="faq-answer"><div><p>Depende de la actividad, el alcance de comercialización y la jurisdicción. En el diagnóstico revisamos tu caso y definimos si corresponde una habilitación, RNE/RPE, RNPA/RPPA u otra gestión.</p></div></div></article>
           <article class="faq-item"><button class="faq-question" aria-expanded="false"><span>¿Qué hace un Director Técnico?</span><span class="faq-plus" aria-hidden="true"></span></button><div class="faq-answer"><div><p>Supervisa técnicamente la actividad, verifica el cumplimiento normativo, acompaña controles y ayuda a mantener procesos seguros y documentados. El alcance exacto se ajusta al establecimiento.</p></div></div></article>
@@ -268,40 +258,6 @@
       </div>
     </div>
   </footer>
-
-  <div class="modal" id="diagnosisModal" role="dialog" aria-modal="true" aria-labelledby="diagnosisTitle">
-    <div class="modal-card">
-      <button class="modal-close" data-close-diagnosis aria-label="Cerrar diagnóstico">×</button>
-      <span class="eyebrow-badge"><span class="dot"></span>Diagnóstico express</span>
-      <div class="wizard-progress" aria-label="Progreso"><span class="active"></span><span></span><span></span></div>
-      <div class="wizard-step active" data-step="1">
-        <h2 id="diagnosisTitle">¿En qué etapa está tu proyecto?</h2>
-        <p>Elegí la opción que mejor describe tu situación actual.</p>
-        <div class="choice-grid">
-          <button class="choice" data-stage="idea"><strong>Estoy comenzando</strong><span>Tengo una idea, producto o local y necesito saber por dónde empezar.</span></button>
-          <button class="choice" data-stage="active"><strong>Ya estoy produciendo</strong><span>Mi actividad está en marcha y necesito ordenar o regularizar.</span></button>
-          <button class="choice" data-stage="growth"><strong>Quiero crecer</strong><span>Busco sumar productos, volumen o nuevos mercados.</span></button>
-          <button class="choice" data-stage="inspection"><strong>Tengo una inspección</strong><span>Necesito prepararme o resolver observaciones.</span></button>
-        </div>
-      </div>
-      <div class="wizard-step" data-step="2">
-        <h2>¿Cuál es hoy tu principal desafío?</h2>
-        <p>No hace falta conocer el nombre técnico del trámite.</p>
-        <div class="choice-grid">
-          <button class="choice" data-need="registration"><strong>Habilitar o inscribir</strong><span>Establecimiento, producto o actividad.</span></button>
-          <button class="choice" data-need="quality"><strong>Ordenar procesos</strong><span>BPM, documentación e inocuidad.</span></button>
-          <button class="choice" data-need="technical"><strong>Tener respaldo técnico</strong><span>Asesoría o dirección profesional.</span></button>
-          <button class="choice" data-need="training"><strong>Capacitar al equipo</strong><span>Manipulación y formación por rubro.</span></button>
-        </div>
-      </div>
-      <div class="wizard-step" data-step="3">
-        <h2>Ya tenemos un buen punto de partida.</h2>
-        <p>Esta orientación es preliminar y se confirma luego de conocer tu actividad y jurisdicción.</p>
-        <div class="result-card"><span class="result-label">Ruta sugerida</span><h3 id="resultTitle">Diagnóstico técnico + plan de trabajo</h3><p id="resultText">Comenzaríamos con un relevamiento para ordenar requisitos y definir los próximos pasos.</p></div>
-        <div class="result-actions"><button class="btn btn-primary" id="resultCta">Cerrar diagnóstico</button><button class="btn btn-secondary" id="restartDiagnosis">Volver a empezar</button></div>
-      </div>
-    </div>
-  </div>
 
     <script src="js/main.js" defer></script>
 </body>
