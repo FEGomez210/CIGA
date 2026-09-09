@@ -366,8 +366,8 @@
     footer .brand-name small { color: rgba(255,255,255,.42); }
     footer .brand-logo { width: clamp(62px, 7vw, 82px); }
     .footer-meta { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 24px; font-size: .74rem; }
-.footer-contact-wrap { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
-.footer-contact-label { font-size: .7rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.72); }
+  .footer-contact-wrap { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+  .footer-contact-label { font-size: .7rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.72); }
     .footer-social a { display: grid; width: 32px; height: 32px; place-items: center; border: 1px solid rgba(255,255,255,.24); border-radius: 50%; color: rgba(255,255,255,.82); transition: color .2s ease, background .2s ease, border-color .2s ease, transform .2s ease; }
     .footer-social a:hover { border-color: var(--forest); color: var(--ink); background: var(--forest); transform: translateY(-2px); }
     .footer-social svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
@@ -474,6 +474,8 @@
       .field, .field.full { grid-column: 1; }
       .footer-grid { align-items: flex-start; flex-direction: column; }
       .footer-meta { justify-content: flex-start; gap: 12px 20px; }
+      .footer-contact-wrap { flex-basis: 100%; width: 100%; padding-top: 4px; }
+      .footer-social { margin-left: 0; }
       footer { padding: 26px 0; }
       footer .brand-logo { width: 58px; }
     }
