@@ -373,7 +373,7 @@
     .footer-social a:nth-child(3) svg, .footer-social a:nth-child(4) svg { fill: currentColor; stroke: none; }
     .footer-social .social-fill { fill: currentColor; stroke: none; }
 
-    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal { opacity: 1; transform: none; transition: opacity .6s ease, transform .6s ease; }
     .reveal.visible { opacity: 1; transform: none; }
 
     @media (max-width: 1020px) {
