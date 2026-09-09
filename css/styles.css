@@ -430,20 +430,39 @@
     }
 
     @media (max-width: 580px) {
-      h1 { font-size: clamp(2.8rem, 14vw, 4rem); }
-      h2 { font-size: 2.3rem; }
+      .section { padding: 58px 0; }
+      h1 { margin-bottom: 18px; font-size: clamp(2.5rem, 12vw, 3.5rem); }
+      h2 { margin-bottom: 14px; font-size: 2rem; }
+      .lead { font-size: .98rem; }
       .hero-proof { display: grid; }
-      .hero-visual { min-height: 480px; transform: none; margin: 0; }
-      .visual-orbit { width: 390px; height: 390px; top: 40px; right: -100px; }
-      .dashboard-card { right: 0; padding: 20px; transform: none; }
-      .floating-card.audit { right: -5px; bottom: 20px; }
+      .hero { padding: 104px 0 42px; }
+      .hero-grid { gap: 26px; }
+      .hero-copy .lead { margin-bottom: 22px; }
+      .hero-actions { margin-bottom: 24px; }
+      .hero-visual { min-height: 390px; transform: none; margin: 0; }
+      .visual-orbit { width: 300px; height: 300px; top: 42px; right: -70px; }
+      .dashboard-card { top: 30px; right: 0; padding: 16px; transform: none; }
+      .dash-top { margin-bottom: 18px; }
+      .dash-list { gap: 7px; margin-top: 16px; }
+      .dash-row { gap: 8px; padding: 9px; }
+      .floating-card.audit { right: -5px; bottom: 8px; padding: 11px 13px; }
       .floating-card.alert { display: none; }
       .trust-grid { grid-template-columns: 1fr; }
-      .trust-item { min-height: 92px; border-top: 1px solid var(--line); border-left: 0; }
+      .trust-bar { margin-top: -10px; }
+      .trust-item { min-height: 76px; padding: 16px 20px; border-top: 1px solid var(--line); border-left: 0; }
       .trust-item:first-child { border-top: 0; }
       .service-grid, .workspace-stats, .workspace-columns { grid-template-columns: 1fr; }
-      .service-card { min-height: 250px; }
+      .service-card { min-height: 210px; padding: 21px; }
+      .service-icon { width: 42px; height: 42px; margin-bottom: 25px; }
+      .service-card h3 { font-size: 1.18rem; }
+      .service-card p { margin-bottom: 18px; }
+      .service-cta { margin-top: 18px; padding: 20px; }
       .service-cta { display: grid; }
+      .about-ciga { padding-bottom: 44px; }
+      .about-ciga-points { gap: 10px; }
+      .field-notes { padding-top: 18px; }
+      .field-photo, .field-photo img { min-height: 220px; }
+      .team-note { margin-top: 24px; font-size: .88rem; }
       .step { grid-template-columns: 48px 1fr; gap: 12px; }
       .steps::before { left: 23px; }
       .step-number { width: 46px; height: 46px; border-width: 5px; }
@@ -454,6 +473,8 @@
       .field, .field.full { grid-column: 1; }
       .footer-grid { align-items: flex-start; flex-direction: column; }
       .footer-meta { justify-content: flex-start; gap: 12px 20px; }
+      footer { padding: 26px 0; }
+      footer .brand-logo { width: 58px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
