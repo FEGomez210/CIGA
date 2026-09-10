@@ -164,12 +164,12 @@
     .visual-orbit::after { right: 20px; bottom: 120px; background: var(--forest); }
     @keyframes spin { to { transform: rotate(360deg); } }
     .brand-stage { position: absolute; z-index: 2; top: 70px; right: 25px; display: grid; width: 430px; height: 430px; place-items: center; }
-    .brand-stage-logo { position: relative; z-index: 2; display: grid; width: 230px; height: 230px; place-items: center; overflow: hidden; border: 12px solid rgba(255,255,255,.82); border-radius: 50%; background: #fff; box-shadow: 0 24px 58px rgba(42,42,42,.2); animation: logo-breathe 4.8s ease-in-out infinite; }
+    .brand-stage-logo { position: relative; z-index: 2; display: grid; width: 270px; height: 270px; place-items: center; overflow: hidden; border: 13px solid rgba(255,255,255,.82); border-radius: 50%; background: #fff; box-shadow: 0 26px 62px rgba(42,42,42,.22); animation: logo-breathe 4.8s ease-in-out infinite; }
     .brand-stage-logo img { width: 100%; height: 100%; object-fit: cover; }
     .brand-stage p { position: absolute; z-index: 3; bottom: 24px; margin: 0; color: var(--forest-dark); font-size: .77rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
     .brand-stage-ring { position: absolute; border: 1px solid rgba(194,162,106,.38); border-radius: 50%; }
-    .ring-one { width: 330px; height: 330px; animation: ring-pulse 4.8s ease-in-out infinite; }
-    .ring-two { width: 410px; height: 410px; border-style: dashed; animation: spin 26s linear infinite reverse; }
+    .ring-one { width: 370px; height: 370px; animation: ring-pulse 4.8s ease-in-out infinite; }
+    .ring-two { width: 430px; height: 430px; border-style: dashed; animation: spin 26s linear infinite reverse; }
     .brand-stage-dot { position: absolute; z-index: 3; width: 13px; height: 13px; border: 4px solid var(--cream); border-radius: 50%; background: var(--forest-dark); box-shadow: 0 5px 13px rgba(42,42,42,.16); }
     .dot-one { top: 37px; left: 105px; animation: float 4.2s ease-in-out infinite; }
     .dot-two { right: 23px; bottom: 126px; background: var(--orange); animation: float 5.2s .6s ease-in-out infinite; }
@@ -423,9 +423,9 @@
       .hero-visual { min-height: 390px; transform: none; margin: 0; }
       .visual-orbit { width: 300px; height: 300px; top: 42px; right: -70px; }
       .brand-stage { top: 24px; right: 50%; width: 330px; height: 330px; transform: translateX(50%); }
-      .brand-stage-logo { width: 174px; height: 174px; border-width: 9px; }
-      .ring-one { width: 248px; height: 248px; }
-      .ring-two { width: 310px; height: 310px; }
+      .brand-stage-logo { width: 202px; height: 202px; border-width: 10px; }
+      .ring-one { width: 278px; height: 278px; }
+      .ring-two { width: 320px; height: 320px; }
       .brand-stage p { bottom: 14px; font-size: .66rem; }
       .dot-one { top: 25px; left: 88px; }
       .dot-two { right: 10px; bottom: 102px; }
