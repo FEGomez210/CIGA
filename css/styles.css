@@ -163,44 +163,19 @@
     .visual-orbit::before { top: 50px; left: 80px; }
     .visual-orbit::after { right: 20px; bottom: 120px; background: var(--forest); }
     @keyframes spin { to { transform: rotate(360deg); } }
-    .dashboard-card {
-      position: absolute;
-      z-index: 2;
-      width: min(100%, 440px);
-      top: 60px;
-      right: 20px;
-      padding: 26px;
-      border: 1px solid rgba(255,255,255,.8);
-      border-radius: var(--radius-lg);
-      background: rgba(255,254,250,.94);
-      box-shadow: var(--shadow);
-      transform: rotate(1.5deg);
-    }
-    .dash-top { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 28px; }
-    .dash-title { display: flex; align-items: center; gap: 12px; }
-    .dash-icon { display: grid; width: 42px; height: 42px; place-items: center; border-radius: 13px; color: var(--forest); background: var(--mint); }
-    .dash-icon svg { width: 21px; height: 21px; }
-    .dash-title p, .dash-title strong { display: block; margin: 0; }
-    .dash-title p { color: var(--ink-soft); font-size: .72rem; }
-    .status-pill { padding: 6px 10px; border-radius: 99px; color: var(--forest-dark); background: var(--lime); font-size: .68rem; font-weight: 850; text-transform: uppercase; }
-    .progress-meta { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: .8rem; font-weight: 700; }
-    .progress-track { height: 10px; overflow: hidden; border-radius: 99px; background: #e6ece7; }
-    .progress-track span { display: block; width: 68%; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--forest-dark), var(--forest)); }
-    .dash-list { display: grid; gap: 11px; margin-top: 24px; }
-    .dash-row { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 12px; padding: 12px; border: 1px solid #e6ece7; border-radius: 14px; background: #fff; }
-    .dash-check { display: grid; width: 28px; height: 28px; place-items: center; border-radius: 50%; color: #fff; background: var(--forest); }
-    .dash-check.pending { color: var(--ink-soft); background: #edf1ed; }
-    .dash-check svg { width: 15px; height: 15px; }
-    .dash-row strong { display: block; font-size: .79rem; }
-    .dash-row small { color: var(--ink-soft); font-size: .69rem; }
-    .dash-row > small { font-weight: 700; }
-    .floating-card { position: absolute; z-index: 3; padding: 15px 18px; border-radius: 17px; background: #fff; box-shadow: 0 16px 38px rgba(42,42,42,.15); }
-    .floating-card strong { display: block; font-size: .84rem; }
-    .floating-card span { color: var(--ink-soft); font-size: .72rem; }
-    .floating-card.audit { right: -16px; bottom: 61px; animation: float 4.5s ease-in-out infinite; }
-    .floating-card.alert { bottom: 15px; left: 4px; display: flex; align-items: center; gap: 11px; animation: float 5s .8s ease-in-out infinite; }
-    .floating-card.alert .mini-icon { display: grid; width: 34px; height: 34px; place-items: center; border-radius: 11px; color: var(--forest); background: var(--lime); }
-    .floating-card.alert svg { width: 17px; height: 17px; }
+    .brand-stage { position: absolute; z-index: 2; top: 90px; right: 45px; display: grid; width: 390px; height: 390px; place-items: center; }
+    .brand-stage-logo { position: relative; z-index: 2; display: grid; width: 190px; height: 190px; place-items: center; overflow: hidden; border: 10px solid rgba(255,255,255,.78); border-radius: 50%; background: #fff; box-shadow: 0 22px 54px rgba(42,42,42,.18); animation: logo-breathe 4.8s ease-in-out infinite; }
+    .brand-stage-logo img { width: 100%; height: 100%; object-fit: cover; }
+    .brand-stage p { position: absolute; z-index: 3; bottom: 24px; margin: 0; color: var(--forest-dark); font-size: .77rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+    .brand-stage-ring { position: absolute; border: 1px solid rgba(194,162,106,.38); border-radius: 50%; }
+    .ring-one { width: 280px; height: 280px; animation: ring-pulse 4.8s ease-in-out infinite; }
+    .ring-two { width: 350px; height: 350px; border-style: dashed; animation: spin 26s linear infinite reverse; }
+    .brand-stage-dot { position: absolute; z-index: 3; width: 13px; height: 13px; border: 4px solid var(--cream); border-radius: 50%; background: var(--forest-dark); box-shadow: 0 5px 13px rgba(42,42,42,.16); }
+    .dot-one { top: 37px; left: 105px; animation: float 4.2s ease-in-out infinite; }
+    .dot-two { right: 23px; bottom: 126px; background: var(--orange); animation: float 5.2s .6s ease-in-out infinite; }
+    .dot-three { bottom: 65px; left: 58px; background: #2aa782; animation: float 4.6s 1s ease-in-out infinite; }
+    @keyframes logo-breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.035); } }
+    @keyframes ring-pulse { 0%, 100% { transform: scale(.96); opacity: .55; } 50% { transform: scale(1.04); opacity: 1; } }
     @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
 
     .trust-bar { position: relative; z-index: 2; margin-top: -26px; }
@@ -447,12 +422,14 @@
       .hero-actions { margin-bottom: 24px; }
       .hero-visual { min-height: 390px; transform: none; margin: 0; }
       .visual-orbit { width: 300px; height: 300px; top: 42px; right: -70px; }
-      .dashboard-card { top: 30px; right: 0; padding: 16px; transform: none; }
-      .dash-top { margin-bottom: 18px; }
-      .dash-list { gap: 7px; margin-top: 16px; }
-      .dash-row { gap: 8px; padding: 9px; }
-      .floating-card.audit { right: -5px; bottom: 8px; padding: 11px 13px; }
-      .floating-card.alert { display: none; }
+      .brand-stage { top: 34px; right: 50%; width: 300px; height: 300px; transform: translateX(50%); }
+      .brand-stage-logo { width: 148px; height: 148px; border-width: 8px; }
+      .ring-one { width: 218px; height: 218px; }
+      .ring-two { width: 278px; height: 278px; }
+      .brand-stage p { bottom: 14px; font-size: .66rem; }
+      .dot-one { top: 28px; left: 80px; }
+      .dot-two { right: 12px; bottom: 94px; }
+      .dot-three { bottom: 48px; left: 42px; }
       .trust-grid { grid-template-columns: 1fr; }
       .trust-bar { margin-top: -10px; }
       .trust-item { min-height: 76px; padding: 16px 20px; border-top: 1px solid var(--line); border-left: 0; }
