@@ -163,13 +163,13 @@
     .visual-orbit::before { top: 50px; left: 80px; }
     .visual-orbit::after { right: 20px; bottom: 120px; background: var(--forest); }
     @keyframes spin { to { transform: rotate(360deg); } }
-    .brand-stage { position: absolute; z-index: 2; top: 90px; right: 45px; display: grid; width: 390px; height: 390px; place-items: center; }
-    .brand-stage-logo { position: relative; z-index: 2; display: grid; width: 190px; height: 190px; place-items: center; overflow: hidden; border: 10px solid rgba(255,255,255,.78); border-radius: 50%; background: #fff; box-shadow: 0 22px 54px rgba(42,42,42,.18); animation: logo-breathe 4.8s ease-in-out infinite; }
+    .brand-stage { position: absolute; z-index: 2; top: 70px; right: 25px; display: grid; width: 430px; height: 430px; place-items: center; }
+    .brand-stage-logo { position: relative; z-index: 2; display: grid; width: 230px; height: 230px; place-items: center; overflow: hidden; border: 12px solid rgba(255,255,255,.82); border-radius: 50%; background: #fff; box-shadow: 0 24px 58px rgba(42,42,42,.2); animation: logo-breathe 4.8s ease-in-out infinite; }
     .brand-stage-logo img { width: 100%; height: 100%; object-fit: cover; }
     .brand-stage p { position: absolute; z-index: 3; bottom: 24px; margin: 0; color: var(--forest-dark); font-size: .77rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
     .brand-stage-ring { position: absolute; border: 1px solid rgba(194,162,106,.38); border-radius: 50%; }
-    .ring-one { width: 280px; height: 280px; animation: ring-pulse 4.8s ease-in-out infinite; }
-    .ring-two { width: 350px; height: 350px; border-style: dashed; animation: spin 26s linear infinite reverse; }
+    .ring-one { width: 330px; height: 330px; animation: ring-pulse 4.8s ease-in-out infinite; }
+    .ring-two { width: 410px; height: 410px; border-style: dashed; animation: spin 26s linear infinite reverse; }
     .brand-stage-dot { position: absolute; z-index: 3; width: 13px; height: 13px; border: 4px solid var(--cream); border-radius: 50%; background: var(--forest-dark); box-shadow: 0 5px 13px rgba(42,42,42,.16); }
     .dot-one { top: 37px; left: 105px; animation: float 4.2s ease-in-out infinite; }
     .dot-two { right: 23px; bottom: 126px; background: var(--orange); animation: float 5.2s .6s ease-in-out infinite; }
@@ -422,14 +422,14 @@
       .hero-actions { margin-bottom: 24px; }
       .hero-visual { min-height: 390px; transform: none; margin: 0; }
       .visual-orbit { width: 300px; height: 300px; top: 42px; right: -70px; }
-      .brand-stage { top: 34px; right: 50%; width: 300px; height: 300px; transform: translateX(50%); }
-      .brand-stage-logo { width: 148px; height: 148px; border-width: 8px; }
-      .ring-one { width: 218px; height: 218px; }
-      .ring-two { width: 278px; height: 278px; }
+      .brand-stage { top: 24px; right: 50%; width: 330px; height: 330px; transform: translateX(50%); }
+      .brand-stage-logo { width: 174px; height: 174px; border-width: 9px; }
+      .ring-one { width: 248px; height: 248px; }
+      .ring-two { width: 310px; height: 310px; }
       .brand-stage p { bottom: 14px; font-size: .66rem; }
-      .dot-one { top: 28px; left: 80px; }
-      .dot-two { right: 12px; bottom: 94px; }
-      .dot-three { bottom: 48px; left: 42px; }
+      .dot-one { top: 25px; left: 88px; }
+      .dot-two { right: 10px; bottom: 102px; }
+      .dot-three { bottom: 42px; left: 48px; }
       .trust-grid { grid-template-columns: 1fr; }
       .trust-bar { margin-top: -10px; }
       .trust-item { min-height: 76px; padding: 16px 20px; border-top: 1px solid var(--line); border-left: 0; }
