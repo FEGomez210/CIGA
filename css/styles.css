@@ -100,7 +100,7 @@
     .btn-secondary { border-color: var(--line); background: rgba(255,255,255,.66); }
     .btn-secondary:hover { border-color: #bfcfc6; background: #fff; }
     .btn-light { color: var(--forest-dark); background: #fff; }
-    .btn-light:hover { color: #fff; background: var(--forest-dark); box-shadow: 0 10px 24px rgba(42,42,42,.14); }
+    .btn-light:hover, .btn-light:focus-visible, .btn-light:active { color: #fff; background: var(--forest-dark); box-shadow: 0 10px 24px rgba(42,42,42,.14); }
     .btn svg { width: 17px; height: 17px; }
 
     .site-header {
