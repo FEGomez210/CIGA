@@ -205,22 +205,22 @@
     .challenge-number { display: grid; width: 42px; height: 42px; place-items: center; border-radius: 13px; color: var(--forest); background: var(--mint); font-size: .77rem; font-weight: 850; }
     .challenge-card p { margin-bottom: 0; color: var(--ink-soft); font-size: .9rem; }
 
-    .services { background: var(--ink); color: #fff; }
-    .services .kicker { color: var(--lime); }
-    .services .section-head .lead { color: rgba(255,255,255,.66); }
+    .services { background: #F1EEE7; color: var(--ink); }
+    .services .kicker { color: var(--forest-dark); }
+    .services .section-head .lead { color: var(--ink-soft); }
     .filters { display: flex; flex-wrap: wrap; gap: 8px; }
-    .filter-btn { padding: 9px 15px; border: 1px solid rgba(255,255,255,.18); border-radius: 99px; color: rgba(255,255,255,.72); background: transparent; cursor: pointer; font-size: .82rem; font-weight: 750; transition: .2s ease; }
-    .filter-btn:hover, .filter-btn.active { border-color: var(--lime); color: var(--ink); background: var(--lime); }
+    .filter-btn { padding: 9px 15px; border: 1px solid #CFC6B8; border-radius: 99px; color: var(--forest-dark); background: transparent; cursor: pointer; font-size: .82rem; font-weight: 750; transition: .2s ease; }
+    .filter-btn:hover, .filter-btn.active { border-color: var(--forest-dark); color: #fff; background: var(--forest-dark); }
     .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-    .service-card { position: relative; min-height: 280px; overflow: hidden; padding: 27px; border: 1px solid rgba(255,255,255,.12); border-radius: 22px; background: rgba(255,255,255,.055); transition: transform .25s ease, border-color .25s ease, background .25s ease, opacity .2s ease; }
-    .service-card:hover { transform: translateY(-6px); border-color: rgba(194,162,106,.55); background: rgba(255,255,255,.085); }
+    .service-card { position: relative; min-height: 280px; overflow: hidden; padding: 27px; border: 1px solid #D8D0C3; border-radius: 22px; background: #fff; transition: transform .25s ease, border-color .25s ease, background .25s ease, opacity .2s ease; }
+    .service-card:hover { transform: translateY(-6px); border-color: var(--forest); background: #fffdf9; box-shadow: 0 12px 28px rgba(42,42,42,.08); }
     .service-card.hidden { display: none; }
-    .service-icon { display: grid; width: 48px; height: 48px; margin-bottom: 44px; place-items: center; border-radius: 15px; color: var(--lime); background: rgba(194,162,106,.16); }
+    .service-icon { display: grid; width: 48px; height: 48px; margin-bottom: 44px; place-items: center; border-radius: 15px; color: #386B5A; background: #E1EBE4; }
     .service-icon svg { width: 23px; height: 23px; }
     .service-card h3 { font-size: 1.35rem; }
-    .service-card p { margin-bottom: 24px; color: rgba(255,255,255,.62); font-size: .89rem; }
-    .service-card .tag { position: absolute; right: 20px; bottom: 20px; padding: 5px 9px; border-radius: 99px; color: rgba(255,255,255,.63); background: rgba(255,255,255,.08); font-size: .65rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
-    .service-cta { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 26px; padding: 28px 30px; border-radius: 22px; color: var(--ink); background: var(--lime); }
+    .service-card p { margin-bottom: 24px; color: var(--ink-soft); font-size: .89rem; }
+    .service-card .tag { position: absolute; right: 20px; bottom: 20px; padding: 5px 9px; border-radius: 99px; color: var(--forest-dark); background: #EDE5D7; font-size: .65rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+    .service-cta { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 26px; padding: 28px 30px; border-radius: 22px; color: var(--ink); background: #D9E6DE; }
     .service-cta p { margin: 4px 0 0; color: var(--ink-soft); }
 
     .process-grid { display: grid; grid-template-columns: .8fr 1.2fr; align-items: start; gap: 78px; }
