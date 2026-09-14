@@ -387,7 +387,23 @@
       .nav-toggle.open::after { transform: translateY(-6px) rotate(-45deg); }
       .hero { min-height: auto; padding: 120px 0 68px; }
       .hero-grid { gap: 42px; }
-      .hero-visual { min-height: 535px; transform: scale(.92); transform-origin: top center; margin-bottom: -50px; }
+      .hero-visual {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 420px;
+        margin: 0 auto;
+        transform: none;
+      }
+      .brand-stage {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: min(72vw, 420px);
+        height: min(72vw, 420px);
+        margin: 0 auto;
+        transform: none;
+      }
       .section-head { display: block; }
       .section-head .filters { margin-top: 25px; }
       .problem-grid, .process-grid, .faq-wrap, .contact-grid { grid-template-columns: 1fr; }
@@ -420,16 +436,15 @@
       .hero-grid { gap: 26px; }
       .hero-copy .lead { margin-bottom: 22px; }
       .hero-actions { margin-bottom: 24px; }
-      .hero-visual { min-height: 390px; transform: none; margin: 0; }
-      .visual-orbit { width: 300px; height: 300px; top: 42px; right: -70px; }
-      .brand-stage { top: 24px; right: 50%; width: 330px; height: 330px; transform: translateX(50%); }
-      .brand-stage-logo { width: 246px; height: 246px; border-width: 10px; }
-      .ring-one { width: 278px; height: 278px; }
-      .ring-two { width: 320px; height: 320px; }
-      .brand-stage p { bottom: 12px; font-size: 13pt; letter-spacing: .08em; }
-      .dot-one { top: 25px; left: 88px; }
-      .dot-two { right: 10px; bottom: 102px; }
-      .dot-three { bottom: 42px; left: 48px; }
+      .hero-visual { min-height: 390px; transform: none; margin: 0 auto; }
+      .visual-orbit { width: 300px; height: 300px; top: 42px; right: 50%; transform: translateX(50%); }
+      .brand-stage { position: relative; top: auto; right: auto; width: 300px; height: 300px; margin: 0 auto; transform: none; }
+      .brand-stage-logo { width: 228px; height: 228px; border-width: 10px; }
+      .ring-one { width: 260px; height: 260px; }
+      .ring-two { width: 300px; height: 300px; }
+      .dot-one { top: 22px; left: 82px; }
+      .dot-two { right: 14px; bottom: 96px; }
+      .dot-three { bottom: 42px; left: 42px; }
       .trust-grid { grid-template-columns: 1fr; }
       .trust-bar { margin-top: -10px; }
       .trust-item { min-height: 76px; padding: 16px 20px; border-top: 1px solid var(--line); border-left: 0; }
