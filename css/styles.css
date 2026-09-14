@@ -165,6 +165,7 @@
     .visual-orbit::after { right: 20px; bottom: 120px; background: var(--forest); }
     @keyframes spin { to { transform: rotate(360deg); } }
     .brand-stage { position: absolute; z-index: 2; top: 70px; right: 25px; display: grid; width: 430px; height: 430px; place-items: center; }
+    .brand-stage-orbit { position: absolute; inset: 0; animation: orbit-rotation 22s linear infinite; }
     .brand-stage-logo { position: relative; z-index: 2; display: grid; width: 330px; height: 330px; place-items: center; overflow: hidden; border: 13px solid rgba(255,255,255,.82); border-radius: 50%; background: #fff; box-shadow: 0 28px 66px rgba(42,42,42,.22); animation: logo-breathe 4.8s ease-in-out infinite; }
     .brand-stage-logo img { width: 100%; height: 100%; object-fit: cover; }
     .brand-stage-ring { position: absolute; border: 1px solid rgba(194,162,106,.38); border-radius: 50%; }
@@ -174,6 +175,7 @@
     .dot-one { top: 37px; left: 105px; animation: float 4.2s ease-in-out infinite; }
     .dot-two { right: 23px; bottom: 126px; background: var(--orange); animation: float 5.2s .6s ease-in-out infinite; }
     .dot-three { bottom: 65px; left: 58px; background: #2aa782; animation: float 4.6s 1s ease-in-out infinite; }
+    @keyframes orbit-rotation { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
     @keyframes logo-breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.035); } }
     @keyframes ring-pulse { 0%, 100% { transform: scale(.96); opacity: .55; } 50% { transform: scale(1.04); opacity: 1; } }
     @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
