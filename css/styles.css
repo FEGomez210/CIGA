@@ -392,20 +392,37 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: min(88vw, 470px);
+        width: 100%;
         min-height: 470px;
         margin: 0 auto;
         transform: none;
       }
-      .brand-stage {
-        position: relative;
-        top: auto;
-        right: auto;
-        width: min(86vw, 420px);
-        height: min(86vw, 420px);
-        margin: 0 auto;
-        transform: none;
+      .visual-orbit {
+        width: 470px;
+        height: 470px;
+        top: 18px;
+        right: 50%;
+        transform: translateX(50%);
       }
+      .brand-stage {
+        position: absolute;
+        top: 20px;
+        right: 50%;
+        width: 430px;
+        height: 430px;
+        margin: 0 auto;
+        transform: translateX(50%);
+      }
+      .brand-stage-logo {
+        width: 330px;
+        height: 330px;
+        border-width: 13px;
+      }
+      .ring-one { width: 370px; height: 370px; }
+      .ring-two { width: 430px; height: 430px; }
+      .dot-one { top: 37px; left: 105px; }
+      .dot-two { right: 23px; bottom: 126px; }
+      .dot-three { bottom: 65px; left: 58px; }
       .section-head { display: block; }
       .section-head .filters { margin-top: 25px; }
       .problem-grid, .process-grid, .faq-wrap, .contact-grid { grid-template-columns: 1fr; }
@@ -438,15 +455,15 @@
       .hero-grid { gap: 26px; }
       .hero-copy .lead { margin-bottom: 22px; }
       .hero-actions { margin-bottom: 24px; }
-      .hero-visual { width: min(88vw, 420px); min-height: 420px; margin: 0 auto; }
-      .visual-orbit { width: 310px; height: 310px; top: 36px; right: 50%; transform: translateX(50%); }
-      .brand-stage { position: relative; width: 300px; height: 300px; margin: 0 auto; }
-      .brand-stage-logo { width: 230px; height: 230px; border-width: 10px; }
-      .ring-one { width: 260px; height: 260px; }
-      .ring-two { width: 300px; height: 300px; }
-      .dot-one { top: 18px; left: 82px; }
-      .dot-two { right: 12px; bottom: 94px; }
-      .dot-three { bottom: 38px; left: 42px; }
+      .hero-visual { width: 100%; min-height: 440px; margin: 0 auto; }
+      .visual-orbit { width: 410px; height: 410px; top: 18px; right: 50%; transform: translateX(50%); }
+      .brand-stage { position: absolute; top: 18px; right: 50%; width: 380px; height: 380px; transform: translateX(50%); }
+      .brand-stage-logo { width: 290px; height: 290px; border-width: 12px; }
+      .ring-one { width: 325px; height: 325px; }
+      .ring-two { width: 380px; height: 380px; }
+      .dot-one { top: 34px; left: 96px; }
+      .dot-two { right: 18px; bottom: 112px; }
+      .dot-three { bottom: 52px; left: 52px; }
       .trust-grid { grid-template-columns: 1fr; }
       .trust-bar { margin-top: -10px; }
       .trust-item { min-height: 76px; padding: 16px 20px; border-top: 1px solid var(--line); border-left: 0; }
