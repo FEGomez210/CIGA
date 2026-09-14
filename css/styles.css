@@ -388,10 +388,12 @@
       .hero { min-height: auto; padding: 120px 0 68px; }
       .hero-grid { gap: 42px; }
       .hero-visual {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 420px;
+        width: min(88vw, 470px);
+        min-height: 470px;
         margin: 0 auto;
         transform: none;
       }
@@ -399,8 +401,8 @@
         position: relative;
         top: auto;
         right: auto;
-        width: min(72vw, 420px);
-        height: min(72vw, 420px);
+        width: min(86vw, 420px);
+        height: min(86vw, 420px);
         margin: 0 auto;
         transform: none;
       }
@@ -436,15 +438,15 @@
       .hero-grid { gap: 26px; }
       .hero-copy .lead { margin-bottom: 22px; }
       .hero-actions { margin-bottom: 24px; }
-      .hero-visual { min-height: 390px; transform: none; margin: 0 auto; }
-      .visual-orbit { width: 300px; height: 300px; top: 42px; right: 50%; transform: translateX(50%); }
-      .brand-stage { position: relative; top: auto; right: auto; width: 300px; height: 300px; margin: 0 auto; transform: none; }
-      .brand-stage-logo { width: 228px; height: 228px; border-width: 10px; }
+      .hero-visual { width: min(88vw, 420px); min-height: 420px; margin: 0 auto; }
+      .visual-orbit { width: 310px; height: 310px; top: 36px; right: 50%; transform: translateX(50%); }
+      .brand-stage { position: relative; width: 300px; height: 300px; margin: 0 auto; }
+      .brand-stage-logo { width: 230px; height: 230px; border-width: 10px; }
       .ring-one { width: 260px; height: 260px; }
       .ring-two { width: 300px; height: 300px; }
-      .dot-one { top: 22px; left: 82px; }
-      .dot-two { right: 14px; bottom: 96px; }
-      .dot-three { bottom: 42px; left: 42px; }
+      .dot-one { top: 18px; left: 82px; }
+      .dot-two { right: 12px; bottom: 94px; }
+      .dot-three { bottom: 38px; left: 42px; }
       .trust-grid { grid-template-columns: 1fr; }
       .trust-bar { margin-top: -10px; }
       .trust-item { min-height: 76px; padding: 16px 20px; border-top: 1px solid var(--line); border-left: 0; }
