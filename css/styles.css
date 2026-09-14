@@ -172,9 +172,9 @@
     .dot-one { top: 37px; left: 105px; animation: float 4.2s ease-in-out infinite; }
     .dot-two { right: 23px; bottom: 126px; background: var(--orange); animation: float 5.2s .6s ease-in-out infinite; }
     .dot-three { bottom: 65px; left: 58px; background: #2aa782; animation: float 4.6s 1s ease-in-out infinite; }
-    .dot-four, .dot-five { width: 12px; height: 12px; border-width: 6px; background: var(--orange); box-shadow: 0 4px 12px rgba(42,42,42,.16); }
-    .dot-four { top: 50px; left: 80px; }
-    .dot-five { right: 20px; bottom: 120px; background: var(--forest); }
+    .dot-four, .dot-five { width: 12px; height: 12px; border-width: 6px; box-shadow: 0 4px 12px rgba(42,42,42,.16); }
+    .dot-four { top: 50px; left: 80px; background: #D49A2A; }
+    .dot-five { right: 20px; bottom: 120px; background: #2AA782; }
     @keyframes orbit-rotation { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
     @keyframes logo-breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.035); } }
     @keyframes ring-pulse { 0%, 100% { transform: scale(.96); opacity: .55; } 50% { transform: scale(1.04); opacity: 1; } }
